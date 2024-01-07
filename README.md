@@ -1,6 +1,8 @@
 This repo is for just resolve errors on UTWiki. UTWiki is an large spaghetti wiki, so It'll not run on other clean wikis.<br>
 이 리포지터리는 UT위키에서 발생하고 있는 오류를 해결하기 위함 그 이상도 이하도 아닙니다. UT위키는 제 관리 능력 부족으로 인해 거대한 스파게티 위키(...)가 되어버렸습니다. 너무 많이 꼬여서 대충 땜빵으로(...) 해결하려고 하고 있어서, 정갈하게 관리되고 있는 다른 위키에선 동작하지 않을 가능성이 높습니다.<br>
------
+
+---
+
 # Liberty MediaWiki Skin
 
 [English](.github/README.en.md)
