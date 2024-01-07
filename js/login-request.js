@@ -29,6 +29,21 @@ function LoginManage() {
 								$( '#modal-login-alert' ).fadeIn( 'slow' );
 								$( '#modal-login-alert' ).text( result.clientlogin.message );
 								break;
+							case 'REDIRECT':
+								$( '#modal-login-alert' ).addClass( 'alert-warning' );
+								$( '#modal-login-alert' ).fadeIn( 'slow' );
+								$( '#modal-login-alert' ).text( '리다이렉트는 미구현 상태입니다. 해당 상태코드가 발생한 경우 아래의 \'다른 방법으로 로그인하기\'를 클릭해 로그인해주세요.' );
+								break;
+							case 'UI':
+								$( '#modal-login-alert' ).addClass( 'alert-warning' );
+								$( '#modal-login-alert' ).fadeIn( 'slow' );
+								$( '#modal-login-alert' ).text( 'UI는 미구현 상태입니다. 해당 상태코드가 발생한 경우 아래의 \'다른 방법으로 로그인하기\'를 클릭해 로그인해주세요.' );
+								break;
+							case 'RESTART':
+								$( '#modal-login-alert' ).addClass( 'alert-warning' );
+								$( '#modal-login-alert' ).fadeIn( 'slow' );
+								$( '#modal-login-alert' ).text( 'RESTART는 미구현 상태입니다. 해당 상태코드가 발생한 경우 아래의 \'다른 방법으로 로그인하기\'를 클릭해 로그인해주세요.' );
+								break;
 							default:
 
 						}
