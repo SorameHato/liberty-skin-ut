@@ -22,6 +22,14 @@ function LoginManage() {
 					} )
 				} )
 				.then( function ( result ) {
+					/* Error response:
+     					{
+					    "error": {
+					        "code": "writeapidenied",
+					        "info": "You're not allowed to edit this wiki through the API.",
+					        "*": "See http://ut.run.goorm.io/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of API deprecations and breaking changes."
+					    }
+					} */
 					if ( result.clientlogin.status !== 'PASS' ) {
 						switch ( result.clientlogin.status ) {
 							case 'FAIL':
