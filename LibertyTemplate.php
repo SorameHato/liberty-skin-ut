@@ -330,7 +330,7 @@ class LibertyTemplate extends BaseTemplate {
 						if (isset($personalTools['login'])){
 							echo $personalTools['login']['links'][0]['href'];
 						} else if (isset($personalTools['login-private'])) {
-							echo $personalTools['login-private']['links'][0]['href']};
+							echo $personalTools['login-private']['links'][0]['href'];
 						} else {
 							echo "/index.php/특수:로그인";
 					}?>" class="none-outline";>
