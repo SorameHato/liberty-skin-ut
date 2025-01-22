@@ -322,8 +322,18 @@ class LibertyTemplate extends BaseTemplate {
 					class="hide-logout logout-btn" 
 					title="<?php echo Linker::titleAttrib( 'pt-logout', 'withaccess' ); ?>">
 					<span class="fa fa-sign-out"></span></a>
-			<?php } else { ?>
-				<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+			<?php } else {
+					$personalTools = $this->getPersonalTools();
+					?>
+					<a href="<?php
+						# 참고 : https://doc.wikimedia.org/mediawiki-core/master/php/SkinTemplate_8php_source.html#l00513
+						if isset($personalTools['login']){
+							echo $personalTools['login']['links'][0]['href'];
+						} else if isset($personalTools['login-private']) {
+							echo $personalTools['login-private']['links'][0]['href']};
+						} else {
+							echo "/index.php/특수:로그인";
+					}?>" class="none-outline";>
 					<span class="fa fa-sign-in"></span>
 				</a>
 			<?php } ?>
