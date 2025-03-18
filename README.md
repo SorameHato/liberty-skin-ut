@@ -1,5 +1,6 @@
 This repo is for just resolve errors on UTWiki. UTWiki is an large spaghetti wiki, so It'll not run on other clean wikis.<br>
-이 리포지터리는 UT위키에서 발생하고 있는 오류를 해결하기 위함 그 이상도 이하도 아닙니다. UT위키는 제 관리 능력 부족으로 인해 거대한 스파게티 위키(...)가 되어버렸습니다. 너무 많이 꼬여서 대충 땜빵으로(...) 해결하려고 하고 있어서, 정갈하게 관리되고 있는 다른 위키에선 동작하지 않을 가능성이 높습니다.<br>
+이 리포지터리는 UT위키에서 발생하고 있는 오류를 해결하기 위함 그 이상도 이하도 아닙니다. UT위키는 제 관리 능력 부족으로 인해 거대한 스파게티 위키(...)가 되어버렸습니다. 너무 많이 꼬여서 대충 땜빵으로(...) 해결하려고 하고 있어서, 정갈하게 관리되고 있는 다른 위키에선 동작하지 않을 가능성이 높습니다. 아니, 2026년 경 부터는 동작하지 않는다고 당당히 말씀드릴 수 있습니다.<br>
+TODO : 웹폰트 추가, 도다마크 표 레이아웃 오류 수정(class를 wikitable 뿐만 아니라 namutable도 추가해서 core의 wikitable을 override해서 수정) 관련 스타일시트(namutable)
 
 ---
 
