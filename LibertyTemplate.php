@@ -957,10 +957,10 @@ class LibertyTemplate extends BaseTemplate {
 				if ( isset( $data['display'] ) ) {
 					$textObj = $skin->msg( $data['display'] );
 					if ( $textObj->isDisabled() ) {
+						$text = htmlentities( $data['display'], ENT_QUOTES, 'UTF-8' );
 						if ( array_key_exists( 'link', $data ) ) {
 							$href = $data['link'];
 						}
-						$text = htmlentities( $data['display'], ENT_QUOTES, 'UTF-8' );
 					} else {
 						$text = $textObj->text();
 					}
